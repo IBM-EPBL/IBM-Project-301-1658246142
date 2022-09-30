@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bittersweet: #ff0000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    line-height: 1.5;
+    font-weight: 300;
+    background-image: linear-gradient(to bottom right, #7913ec, #b57df4);
+    background-color: blue;
+}
+.note{
+    max-width: 1080px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+.note h2{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+.note-wrapper{
+    margin: 0.7rem 0;
+    padding: 0.5rem 0;
+}
+.note-input h3{
+    color: white;
+}
+#note-title,
+#note-content{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.05rem;
+    padding: 0.55rem;
+    margin-bottom: 0.8rem;
+    border-radius: 2px;
+}
+#note-content{
+    resize: none;
+}
+#note-title:focus,
+#note-content:focus{
+    outline: 0;
+}
+.btn{
+    border: 2px solid #86EC13;
+    color: #fff;
+    padding: 0.55rem 0;
+    width: 120px;
+    border-radius: 2px;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.btn:focus{
+    outline: 0;
+}
+.note-list{
+    margin: 2rem 0;
+    background: white;
+    padding: 2rem;
+    border-radius: 2px;
+}
+.note-item{
+    background: red;
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 2px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+.note-item h3{
+    color: black;
+    margin-bottom: 1rem;
+}
+.note-item p{
+    color: black;
+    padding-bottom: 0.8rem;
+}
+.note-item .btn{
+    display: block;
+    position: relative;
+    margin-top: 0.8rem;
+    border: 2px solid var(--bittersweet);
+    color: var(--bittersweet);
+    background: white; 
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+@media(min-width: 992px){
+    .note-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*** alert ***/
+.warning{
+    border-color: rgba(255, 89, 89, 0.8)!important;
+}
