@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Register!</h1>
+            <form action="{{ url_for('register') }}" method="POST">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <br><br>
+
+                <label for="uname">Username:</label>
+                <input type="text" id="uname" name="uname" placeholder="User Name">
+                <br><br>
+
+                <label for="rollno">Roll No:</label>
+                <input type="text" id="rollno" name="rollno" placeholder="Roll No">
+                <br><br>
+
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="********">
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
