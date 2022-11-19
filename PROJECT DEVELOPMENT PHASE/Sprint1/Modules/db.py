@@ -6,12 +6,12 @@ import os
 
 class Db:
     def __init__(self) -> None:
-        host = os.environ["DBHOST"]
-        uid = os.environ["DBUID"]
-        pwd = os.environ["DBPWD"]
+        host = 'b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud'
+        uid = 'hgp03187'
+        pwd = 'o87ynkAsyyPWNUZ3'
         ssl = os.environ["DBSSLCERT"]
-        db = os.environ["DB"]
-        port = os.environ["DBPORT"]
+        db = 'bludb'
+        port = '32716'
         self.conn = ibm_db.connect(f"DATABASE={db};HOSTNAME={host};PORT={port};SECURITY=SSL;SSLServerCertificate={ssl};UID={uid};PWD={pwd};", "", "" )
               
     def generateId(self) -> str:
