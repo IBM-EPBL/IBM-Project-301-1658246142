@@ -21,11 +21,11 @@ app.config.update(SESSION_COOKIE_SAMESITE="None", SESSION_COOKIE_SECURE=True)
 
 # app.config['DB2_DRIVER'] = '{IBM DB2 ODBC DRIVER}'
 app.config['database'] = 'bludb'
-app.config['hostname'] = '3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud'
-app.config['port'] = '31498'
+app.config['hostname'] = 'b70af05b-76e4-4bca-a1f5-23dbb4c6a74e.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud'
+app.config['port'] = '32716'
 app.config['protocol'] = 'tcpip'
-app.config['uid'] = 'sbb93800'
-app.config['pwd'] = 'wobsVLm6ccFxcNLe'
+app.config['uid'] = 'hgp03187'
+app.config['pwd'] = 'o87ynkAsyyPWNUZ3'
 app.config['security'] = 'SSL'
 try:
     mysql = DB2(app)
